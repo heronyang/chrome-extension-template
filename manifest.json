@@ -1,0 +1,34 @@
+{
+
+    "name": "Enlarge",
+    "description": "This enlarges the website insanely.",
+    "version": "2.0",
+
+    "permissions": [
+        "tabs", "*://www.google.com/*"
+    ],
+
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Click here!"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://www.google.com/*"],
+            "css": ["style.css"],
+            "js": ["jquery.js", "specific.js"],
+            "run_at": "document_end"
+        }
+    ],
+
+    "manifest_version": 2
+
+}
