@@ -1,8 +1,8 @@
 {
 
-    "name": "Enlarge",
-    "description": "This enlarges the website insanely.",
-    "version": "2.0",
+    "name": "Template Name",
+    "description": "This is the description of this template.",
+    "version": "1.0",
 
     "permissions": [
         "tabs", "*://www.google.com/*"
@@ -17,7 +17,7 @@
 
     "browser_action": {
         "default_icon": "icon.png",
-        "default_title": "Click here!"
+        "default_title": "click here!"
     },
 
     "content_scripts": [
